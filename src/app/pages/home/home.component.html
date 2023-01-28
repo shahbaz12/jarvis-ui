@@ -1,0 +1,178 @@
+ <app-header></app-header>
+<div class="text-xl-center Heading hidden">
+    <h1>Degital</h1><span class="banner-productText">
+        <p>Product</p>
+    </span><br>
+    <span class="banner-DesignText">
+        <p>Design</p>
+    </span>
+    <h5 class="agency">agency</h5>
+    <p class="h3 mt-4 banner-Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <button type="button" class="btn btn-dark get-startedBtn mt-4">Get Started</button>
+</div>
+<div class="row picsum-img-wrapper hidden">
+    <div class="col-sm">
+        <img src="assets/1.png" width="" alt="">
+    </div>
+    <div class="col-sm">
+        <img src="assets/2.png" style="margin-top:85px;margin-left: -5px" alt="">
+    </div>
+    <div class="col-sm">
+        <img src="assets/3.png" style="margin-top:85px;margin-left: -5px" alt="">
+    </div>
+    <div class="col-sm">
+        <img src="assets/4.png" style="margin-top:85px;margin-left: -5px" alt="">
+    </div>
+</div>
+
+<div class="container bag-Box hidden">
+    <div class="row pb-lg-5">
+        <div class="col-sm-4">
+            <div class="box">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="assets/Icon-1.png" alt="">
+                </div>
+                <h6 class="d-inline-block h4 pl-2 pt-4 Marketing">Digital Marketing</h6>
+                <p class="p-3 mt-3 d-inline-block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                </p>
+                <a class="text-decoration-none pl-3" href="" style="color:#666;font-weight: 600;">Find Our Mores</a>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="boxTwo">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="assets/Icon-2.png" alt="">
+                </div>
+                <h6 class="d-inline-block h4 pl-3 pt-4 Marketing">UI /UX Design</h6>
+                <p class="p-3 mt-3 d-inline-block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                </p>
+                <a class="text-decoration-none pl-3" href="" style="color:#666;font-weight: 600;">Find Our Mores</a>
+            </div>
+        </div>
+        <div class="col-sm-4 ">
+            <div class="float-end text-center what-we">
+                <h5 class="">What We Can Do For You</h5>
+                <span class="Services">Services we can <br>help you with</span>
+            </div>
+            <div class="boxThree">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="assets/Icon-3.png" alt="">
+                </div>
+                <h6 class="d-inline-block h4 pl-3 pt-4 Marketing">Business</h6>
+                <p class="p-3 mt-3 d-inline-block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                </p>
+                <a class="text-decoration-none pl-3" href="" style="color:#666;font-weight: 600;">Find Our Mores</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------Slider Start-->
+
+<!--   <app-slider class="hidden"></app-slider>
+ -->
+<section class="product hidden" style="display: none">
+    <div class="container-fluid pl-0">
+        <div class="slider-wrap">
+            <div class="slider-main">
+                <!-- <div class="digitalagency">
+            <h4>Branding</h4>
+            <h3>Digital Agency</h3>
+            <p>1</p>
+          </div> -->
+                <div class="item" *ngFor="let slide of slides">
+                    <div class="text">
+                        <img src="{{ slide.img }}" alt="">
+                        <div class="digitalagency">
+                            <h4 class="slide-head">{{slide.heading}}</h4>
+                            <h3>{{slide.details}}</h3>
+                            <p>{{slide.count}}</p>
+                        </div>
+                        <!-- <img
+                src="https://media.istockphoto.com/photos/american-football-championship-teams-ready-professional-players-picture-id1355086328"
+                alt="..."> -->
+                    </div>
+
+                </div>
+                <!-- <div class="item">
+            <div class="text">
+              <img src="https://media.istockphoto.com/photos/making-a-touchdown-picture-id1208734777" alt="...">
+            </div>
+          </div>
+          <div class="item">
+            <div class="text">
+              <img src="https://media.istockphoto.com/photos/american-football-action-picture-id510007585" alt="...">
+            </div>
+          </div> -->
+
+                <!-- <div class="item">
+            <div class="text">4</div>
+          </div>
+          <div class="item">
+            <div class="text">5</div>
+          </div>
+          <div class="item">
+            <div class="text">5</div>
+          </div> -->
+            </div>
+            <div class="button-area">
+                <a type="button" class="prev" appPrev>Prev
+
+                </a>
+                <a type="button" class="next" appNext>Next</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------Blog Start-->
+<div class="blog-bg hidden">
+    <div class="container">
+        <div class="heading-blog">
+            <h1 class="mb-5 ml-3 blog-heading">Latest Blogs Post</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="assets/Blog-1.png" class="card-img-top" alt="...">
+                </div>
+                <p class="mb-0 mt-2 quest">June 9,2022/Cinema</p>
+                <h6 class="quest-heading">Quests</h6>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="assets/Blog-2.png" class="card-img-top" alt="...">
+                </div>
+                <p class="mb-0 mt-2 quest">June 9,2022/Cinema</p>
+                <h6 class="quest-heading">Design</h6>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="assets/Blog-3.png" class="card-img-top" alt="...">
+                </div>
+                <p class="mb-0 mt-2 quest">June 9,2022/Cinema</p>
+                <h6 class="quest-heading">Hand Painting</h6>
+            </div>
+        </div>
+        <!--------Testimonial Start-->
+        <div class="Testimonial text-center">
+            <h5 class="testi-head">Testimonial</h5>
+            <h1>What Our Clients Says</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="assets/Testimonial.png" class="testimonial-img" alt="...">
+            </div>
+            <div class="col-sm-6 clint-feedback">
+                <div class="client-coments shadow-sm  bg-white">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+// .left-side {
+//     background-color: #f5fcf4;
+
+// }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.imgLeft {
+background-image: url(/assets/web-1.png); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+   min-height: 100vh;
+  // background-color: #f5fcf4;
+}
+
+.left-side.text-center.m-0 h3 {
+    text-align: justify;
+    font-weight: 700;
+    padding-left: 38px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.clolerText {
+    font-weight: 700;
+    color: green;
+}
+
+.nav-item {
+    .nav-link {
+        &.active {
+            color: #6b9262;
+
+            &:after {
+                content: "";
+                border-bottom: 1px solid #6b9262;
+                display: block;
+                width: 80px;
+                position: relative;
+                left: 43px;
+            }
+        }
+    }
+}
+
+.subIcon {
+    color: #888;
+    font-weight: 600;
+
+    i {
+        background-color: #f4fcf4;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 2px #888;
+       // padding: 6px;
+        color: #a3cba3;
+        font-size: 15px;
+        margin-right: 6px;
+        font-weight: 500;
+    }
+
+}
+.form-section {
+    width: 25vw;
+    .errspan {
+        float: right;
+        margin-right: 6px;
+        position: relative;
+        z-index: 2;
+        color: #666262;
+        left: -27px;
+        top: 14px;
+    }
+    .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 12px 10px;
+    }
+    input[type="text"], input[type="password"], textarea {
+        background-color : #f3f2f8; 
+      }
+}
+a.ForPass {
+    color: #00811a91;
+    font-weight: 500;
+    font-size: 14px;
+}
+.logo {
+    width: 200px;
+}

@@ -1,0 +1,216 @@
+<!-- header start -->
+<div class="navbar-inner">
+    <nav class="navbar navbar-expand-lg ml-5 mr-5 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/Jlogo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <!-- ml-auto still works just fine-->
+                <div class="navbar-nav ml-auto">
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    <a class="nav-link" href="#">Admin</a>
+                    <a class="nav-link" href="#">Help</a>
+                    <a class="nav-link" href="#">Logout</a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> --->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center banner-text text-size">
+        <h5 class="">The Indus  try’s leading Fiduciary</h5>
+        <h5>Experts in Stock and <span class="bold-text"> Bond Analysis for<br> Wealth Management</span>
+        </h5>
+        <p class="h3 mt-4 banner-Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <button type="button" class="btn btnn">Get a Quote</button>
+
+    </div>
+</div>
+<!-- header end -->
+
+<!-- body start -->
+<div class="container">
+    <div class="row pb-lg-5 mb-5">
+        <div class="col-sm-4" *ngFor="let item of features">
+            <div class="boxTwo" *ngFor="let composant of item.dashboard">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="{{composant.imgurl}}" alt="">
+                </div>
+                <h6 class="Marketing d-inline-block h4">{{composant.heading}}</h6>
+                <p class="pl-3">{{composant.text}}
+                </p>
+                <a type="button" [routerLink]="['/dashboard']" class="button_Crad">{{composant.buttontext}} fff</a>
+            </div>
+            <div class="boxTwo" *ngFor="let composant of item.analytics">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="{{composant.imgurl}}" alt="">
+                </div>
+                <h6 class="Marketing d-inline-block h4">{{composant.heading}}</h6>
+                <p class="pl-3">{{composant.text}}
+                </p>
+                <a type="button" class="button_Crad">{{composant.buttontext}}</a>
+            </div>
+            <div class="boxTwo" *ngFor="let composant of item.podcasts">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="{{composant.imgurl}}" alt=""
+                        style="padding-left: 25px !important;padding-top: 15px !important;">
+                </div>
+                <h6 class="Marketing d-inline-block h4">{{composant.heading}}</h6>
+                <p class="pl-3">{{composant.text}}
+                </p>
+                <a type="button" class="button_Crad">{{composant.buttontext}}</a>
+            </div>
+            <div class="boxTwo" *ngFor="let composant of item.realtime">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="{{composant.imgurl}}" alt="">
+                </div>
+                <h6 class="Marketing d-inline-block h4">{{composant.heading}}</h6>
+                <p class="pl-3">{{composant.text}}
+                </p>
+                <a type="button" class="button_Crad">{{composant.buttontext}}</a>
+            </div>
+            <div class="boxTwo" *ngFor="let composant of item.reports">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="{{composant.imgurl}}" alt="">
+                </div>
+                <h6 class="Marketing d-inline-block h4">{{composant.heading}}</h6>
+                <p class="pl-3">{{composant.text}}
+                </p>
+                <a type="button" class="button_Crad">{{composant.buttontext}}</a>
+            </div>
+            <div class="boxTwo" *ngFor="let composant of item.videos">
+                <div class="icon-logo float-left">
+                    <img class="p-1" src="{{composant.imgurl}}" alt="">
+                </div>
+                <h6 class="Marketing d-inline-block h4">{{composant.heading}}</h6>
+                <p class="pl-3">{{composant.text}}
+                </p>
+                <a type="button" class="button_Crad">{{composant.buttontext}}</a>
+            </div>
+        </div>
+        <!-- <div class="col-sm-4">
+          <div class="boxTwo">
+            <div class="icon-logo float-left">
+              <img class="p-1" src="assets/analytics.png" alt="">
+            </div>
+            <h6 class="Marketing d-inline-block h4 pl-3">Dashboard</h6>
+            <p class="d-inline-block pl-3">Create and view portfolios<br>and watches
+            </p>
+            <a type="button" class="button_Crad">View Dashboard</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="boxTwo">
+            <div class="icon-logo float-left">
+              <img class="p-1" src="assets/podcast.png" alt="" style="padding-left: 26px !important;">
+            </div>
+            <h6 class="Marketing d-inline-block h4 pl-3">Dashboard</h6>
+            <p class="d-inline-block pl-3">Create and view portfolios<br>and watches
+            </p>
+            <a type="button" class="button_Crad">View Dashboard</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="boxTwo">
+            <div class="icon-logo float-left">
+              <img class="p-1" src="assets/realtime.png" alt="">
+            </div>
+            <h6 class="Marketing d-inline-block h4 pl-3">Dashboard</h6>
+            <p class="d-inline-block pl-3">Create and view portfolios<br>and watches
+            </p>
+            <a type="button" class="button_Crad">View Dashboard</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="boxTwo">
+            <div class="icon-logo float-left">
+              <img class="p-1" src="assets/reports.png" alt="">
+            </div>
+            <h6 class="Marketing d-inline-block h4 pl-3">Dashboard</h6>
+            <p class="d-inline-block pl-3">Create and view portfolios<br>and watches
+            </p>
+            <a type="button" class="button_Crad">View Dashboard</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="boxTwo">
+            <div class="icon-logo float-left">
+              <img class="p-1" src="assets/videos.png" alt="">
+            </div>
+            <h6 class="Marketing d-inline-block h4 pl-3">Dashboard</h6>
+            <p class="d-inline-block pl-3">Create and view portfolios<br>and watches
+            </p>
+            <a type="button" class="button_Crad">View Dashboard</a>
+          </div>
+        </div> -->
+    </div>
+</div>
+<!-- body end -->
+
+<!-- footer start -->
+<div class="footer-color">
+    <div class="container">
+        <div class="row pt-5 pb-5" style="border-bottom: 2px solid #6666667a;">
+            <div class="col-sm-6 subScribe-text">
+                <h6>Subscribe to our newsletter to stay up to date with exciting news and exclusive offers.</h6>
+            </div>
+            <div class="col-sm-6 mt-5">
+                <div class="input-group mb-3" style="width: 460px;margin-left: 60px;">
+                    <input type="text" class="form-control" placeholder="www.yourname.com"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2" style="background-color: #131a2b;
+            border: none;
+            padding: 10px;">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/Jlogo.png" alt="">
+                </a>
+            </div>
+            <div class="col-sm-3 top-catagory" *ngFor="let item of topCtagory">
+                <ul class="pl-0">
+                    <li *ngFor="let composant of item.catagories">
+                        <h6 style="color: #fff;">{{composant.heading}}</h6>
+                        <a href="" type="text">{{composant.menu}}</a>
+                        <a href="" type="text">{{composant.menu1}}</a>
+                        <a href="" type="text">{{composant.menu2}}</a>
+                        <a href="" type="text">{{composant.menu3}}</a>
+                        <a href="" type="text">{{composant.menu4}}</a>
+                        <a href="" type="text">{{composant.menu5}}</a>
+                    </li>
+                    <li *ngFor="let composant of item.favourite">
+                        <h6 style="color: #fff;">{{composant.heading}}</h6>
+                        <a href="" type="text">{{composant.menu}}</a>
+                        <a href="" type="text">{{composant.menu1}}</a>
+                        <a href="" type="text">{{composant.menu2}}</a>
+                        <a href="" type="text">{{composant.menu3}}</a>
+                        <a href="" type="text">{{composant.menu4}}</a>
+                        <a href="" type="text">{{composant.menu5}}</a>
+                        <a href="" type="text">{{composant.menu6}}</a>
+                        <a href="" type="text">{{composant.menu7}}</a>
+                    </li>
+                    <li *ngFor="let composant of item.contact">
+                        <h6 style="color: #fff;">{{composant.heading}}</h6>
+                        <i class="{{composant.icon}} float-left map mb-2 mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="footerAddress">{{composant.address}}</p>
+                        <a href="" type="text"><i class="{{composant.emailIcon}} float-left map mb-2 mr-3 mt-1"
+                                aria-hidden="true"></i>{{composant.email}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-end text-center pb-4 mt-3">
+        <p>@2023 Jarvis</p>
+    </div>
+</div>
+<!-- footer end -->
