@@ -2,3 +2,60 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+// body {
+//     background: url(/assets/99_P-2-AAA.jpg);
+//     height: 100vh;
+//     background-position: top;
+//     background-size: cover;
+// }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+ .slick-slider {
+    width: 100% !important;
+    margin: 0 !important;
+    overflow: hidden;
+ }
+ .slick-slide img {
+    display: inline-block;
+    width: 95%;
+    height: 550px;
+    position: relative;
+    //margin-left: -420px;
+    left: -25%;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: transform .6s ease-in-out;
+}
+ul.slick-dots {
+    position: fixed !important;
+    top: 0 !important;
+}
+// .slide.slick-slide.slick-current.slick-active.slick-center {
+//     width: 1400px !important;
+// }
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #898e8f ; 
+    border-radius: 1px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #338791 ; 
+  }

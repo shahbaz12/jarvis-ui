@@ -8,19 +8,23 @@ import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

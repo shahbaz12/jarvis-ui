@@ -1,1 +1,196 @@
-<p>dashboard works!</p>
+<!-- header start -->
+<div class="navbar-inner">
+    <nav class="navbar navbar-expand-lg ml-5 mr-5 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="assets/Headerlgo.png" alt="" style="width: 30%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <!-- ml-auto still works just fine-->
+                <div class="navbar-nav ml-auto">
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Help</a>
+                    <a class="nav-link" href="#">Logout</a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> --->
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- header end -->
+<nav class="navbar navbar-expand-lg" style="background-color: #f3fbf0 !important;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="margin: 0px auto;">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Stocks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bonds</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ETF List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bond Reports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PEM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CALLS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PUTS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- <form>
+    <div class="mb-3 row">
+        <label for="table-filtering-search" class="col-xs-3 col-sm-auto col-form-label">Search:</label>
+        <div class="col-xs-3 col-sm-auto">
+            <input id="table-filtering-search" class="form-control" type="text" [formControl]="filter" />
+        </div>
+    </div>
+</form>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-striped text-center table-sm table-bordered">
+            <thead class="text-light" style="background-color: #73a95d !important">
+                <tr>
+                    <th scope="col">Ticker</th>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Rank Within Table</th>
+                    <th scope="col">Population</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Sector</th>
+                    <th scope="col">Sales 3-Year Avg (%)</th>
+                    <th scope="col">Enterprise Value ($M)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let country of countries$ | async; index as i">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td>
+                        <ngb-highlight [result]="country.name" [term]="filter.value"></ngb-highlight>
+                    </td>
+                    <td><ngb-highlight [result]="country.area | number" [term]="filter.value"></ngb-highlight></td>
+                    <td><ngb-highlight [result]="country.population | number" [term]="filter.value"></ngb-highlight>
+                    </td>
+                    <td><ngb-highlight [result]="country.namee" [term]="filter.value"></ngb-highlight>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+<div class="row">
+    <div class="col-sm-6">
+        <form class="ml-4 mt-3 d-inline-block">
+            <div class="mb-3 row">
+                <label for="table-filtering-search" class="col-xs-3 col-sm-auto col-form-label">Search:</label>
+                <div class="col-xs-3 col-sm-auto">
+                    <input id="table-filtering-search" class="form-control" type="text" [formControl]="filter" />
+                </div>
+            </div>
+        </form>
+        <div class="btn-group ml-2" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">PDF</button>
+            <button type="button" class="btn btn-secondary">CLOUMNS</button>
+        </div>
+    </div>
+    <div class="col-sm-6 mt-3">
+        <select class="form-select d-inline-block" aria-label="Default select example" style="width:50% !important">
+                <option value="29">Long Term Growth Model May 2021</option>
+                <option value="56">Long Term Growth June 2021</option>
+                <option value="61">Long Term Growth Model</option>
+                <option value="66">Left Brain Compound Growth Fund</option>
+                <option value="67">Top 20 Core Holdings</option>
+                <option value="69">Top 15 for August 2021</option>
+                <option value="72">Predictable</option>
+                <option value="73">High Dividend Yield</option>
+                <option value="74">Left Brain Capital Appreciation Fund</option>
+                <option value="77">Healthcare Favorites</option>
+                <option value="80">Top 12</option>
+                <option value="81">Retail Favorites</option>
+                <option value="82">REIT Favorites</option>
+                <option value="83">Turnarounds</option>
+                <option value="87">Income Model</option>
+                <option value="88">Defensive</option>
+                <option value="89">Slow </option>
+                <option value="90">Small Cap Growth</option>
+                <option value="91">LBCA Teens</option>
+                <option value="92">Jarvis Income Securities</option>
+                <option value="93">2021s Best Performing Stocks</option>
+                <option value="94">2021s Worse Performing Stocks</option>
+                <option value="96">Special Situations</option>
+                <option value="98">LB Healthcare</option>
+                <option value="99">LB Financial Favorites </option>
+                <option value="100">LBCA Fund 7-8-22</option>
+                <option value="104">Test Portfolio</option>
+                <option value="107">LBCA Masterfund</option>
+        </select>
+        <div class="btn-group ml-2" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">GO</button>
+            <button type="button" class="btn btn-secondary">MANAGE</button>
+            <button type="button" class="btn btn-secondary">PDF</button>
+            <button type="button" class="btn btn-secondary">EXCEL</button>
+        </div>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped text-center table-sm table-bordered">
+        <thead class="text-light" style="background-color: #73a95d !important">
+            <tr>
+                <th scope="col">Ticker</th>
+                <th scope="col">Rank</th>
+                <th scope="col">Rank Within Table</th>
+                <th scope="col">Company</th>
+                <th scope="col">Sector</th>
+                <th scope="col">Sales 3-Year Avg (%)</th>
+                <th scope="col">Enterprise Value ($M)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of countries$ | async; index as i">
+                <td class="p-2">
+                    <ngb-highlight [result]="country.name" [term]="filter.value"></ngb-highlight>
+                </td>
+                <td><ngb-highlight [result]="country.area | number" [term]="filter.value"></ngb-highlight></td>
+                <td><ngb-highlight [result]="country.population | number" [term]="filter.value"></ngb-highlight>
+                </td>
+                <td><ngb-highlight [result]="country.company" [term]="filter.value"></ngb-highlight>
+                </td>
+                <td><ngb-highlight [result]="country.sector " [term]="filter.value"></ngb-highlight></td>
+                <td><ngb-highlight [result]="country.sales" [term]="filter.value"></ngb-highlight>
+                </td>
+                <td><ngb-highlight [result]="country.enterprise" [term]="filter.value"></ngb-highlight>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="d-flex justify-content-between p-2">
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize"
+        (pageChange)="refreshCountries()">
+    </ngb-pagination>
+
+    <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+        <option [ngValue]="2">2 items per page</option>
+        <option [ngValue]="4">4 items per page</option>
+        <option [ngValue]="6">6 items per page</option>
+    </select>
+</div>

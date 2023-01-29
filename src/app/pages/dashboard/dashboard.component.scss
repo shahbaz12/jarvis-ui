@@ -1,0 +1,68 @@
+.navbar-nav.ml-auto a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 40px 20px;
+    height: 91px;
+    color: #5D8B4C;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+thead.text-light tr th {
+    font-weight: 400;
+    padding: 8px;
+}
+ul.navbar-nav.mr-auto li a {
+    margin-right: 25px;
+    color: #000;
+    font-weight: 400;
+}
+ul.navbar-nav.mr-auto li a:hover {
+    background: #739b5e;
+    color: #fff;
+}
+ul.navbar-nav.mr-auto li a:active {
+    background: #739b5e;
+    color: #fff;
+}
+a.button_Crad {
+    width: 305px;
+    background: #ebeff2;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin: 0 25px;
+    height: 42px;
+    padding-top: 8px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+a.button_Crad:active {
+    background: #739b5e;
+    color: #fff;
+}
+a.button_Crad:hover {
+    background: #739b5e;
+    color: #fff;
+}
+.btn-group.ml-2 button {
+    font-family: 'Poppins';
+    font-size: 15px;
+    background: #ebeff2 !important;
+    color: #000;
+    border: 1px solid #00000036;
+}
+.btn-group.ml-2 button:hover {
+    background: #739b5e!important;
+    color: #fff;
+}
+.btn-group.ml-2 button:active {
+    background: #739b5e;
+    color: #fff;
+}
